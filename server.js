@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-
 let bodyParser = require('body-parser'),
 auth = require('./modules/OAuth-Salesforce');
+let _case = require('./modules/case');
 
 app.enable('trust proxy');
 
@@ -22,8 +22,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 // routing cases
-let _case = require('./modules/case');
 
+app.post('/case', _case.execute);
 app.post('/login', auth.loginLink);
 app.post('/logout', auth.logout);
 app.get('/login/:slackUserId', auth.oauthLogin);
