@@ -61,7 +61,7 @@ exports.oauthCallback = (req, res) => {
         let html = `
             <html>
             <body style="text-align:center;padding-top:100px">
-            <img src="images/linked.png"/>
+            <img src="images/linked.png" alt = "img.png"/>
             <div style="font-family:'Helvetica Neue';font-weight:300;color:#444">
                 <h2 style="font-weight: normal">Authentication completed</h2>
                 Your Slack User Id is now linked to your Salesforce User Id.<br/>
