@@ -1,5 +1,6 @@
-"name": "Slackforce",
-"description": "Simple message broker to enable Slack to Salesforce communication using Slash Commands",
+{
+"name": "Slack2Cases",
+"description": "creates a case from slack to salesforce",
 "env": {
   "SF_CLIENT_ID": {
       "description": "Consumer key of your Salesforce Connected App",
@@ -17,7 +18,6 @@
       "description": "Slack token for the case slash command",
       "value":"",
       "required":false
-  },
-  
-}
+   },
+  }
 }
