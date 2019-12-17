@@ -52,7 +52,7 @@ exports.oauthCallback = (req, res) => {
         }
     };
 
-    request.post(options, function (error, res, body) {
+    request.post(options, function (error, response, body) {
         if (error) {
             console.log(error);
             return res.send("error");
