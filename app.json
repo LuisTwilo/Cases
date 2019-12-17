@@ -18,6 +18,6 @@
       "description": "Slack token for the case slash command",
       "value":"",
       "required":false
-   },
+   }
   }
 }
