@@ -1,5 +1,5 @@
 {
-"name": "Slack2Cases",
+"name": "s2s",
 "description": "creates a case from slack to salesforce",
 "env": {
   "SF_CLIENT_ID": {
